@@ -1,0 +1,89 @@
+CSR -  Client-sede Rendering
+SSR - Server-side Rendering
+aplicação Backend/Frontend	(React/Express)
+backend faz build de .ts para .js
+frontend faz build de .ts para .js, .tsx para .html, .js  e .css para .css
+
+Backend 
+	node
+	express
+	mongodb
+	swagger
+
+1ª entrega PI 
+	CRUD
+	API
+	Documentação-Swagger
+	
+2ª entrega 
+	Frontend + backend
+	autenticação
+	middleware
+
+
+API: Application Programming Interface, interface de programação de aplicações
+	Consumir servições: autenticação,
+	trocar dados:
+	realizar integrações:
+	
+Componentes comuns de ua API:
+	Endpoint: URLs que representam recursos ou ações disponiveis, rota  ou url de um recurso, nomeado no plural, ex: /clientes, /pedidos. Pode conter uma query com parametros
+	Metodos HTTP (em APIs web): GET, POST, PUT, DELETE, etc) HTTP é o Protocolo de transferencia de hipertexto, request (requisitar), response(resposta), utiliza a porta 80 como padrão
+		get: solicita a representação de um recurso especifico. Requisições utilizando o metodo GET devem retornar apenas dados
+		head: igual ao get porem sem conter o corpo com resposta
+		post: metodo utilizado para submeter uma mudança ou inserir algo no servidor
+		put: substitui todas as atuais representações do recurso de destino pela carga de dados de requisição//update
+		delete: excluir
+		patch: igual o put, porem aplica modificações parciais, por exemplo só um campo como telefone
+	Payload: corpo da requisição, onde ficam os dadoss transmitidos, é o conteudo, geralmente em formato JSON e XML
+	Headers - cabeçalhos: informar o tiop de conteudo (JSON, XML), tamanho. Content-Type, Accept, Authorization, User-Agent, Cache-Control, Accept-Language, ...
+	
+	codigos de resposta: 200 - ok, 404, ....
+	
+	
+WSDL: protocolo
+
+API parte 2
+- Microserviços
+- metodos put, delete
+
+
+JSON
+
+
+ligar servidor sem precisar fechar para atualizar
+node --watch app.js //para serviar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
