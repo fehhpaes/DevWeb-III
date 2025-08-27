@@ -22,7 +22,11 @@ app.post('/', (req, res) => {
  res.send(JSON.stringify(alunos));
 });
 
-
+app.put('/', (req, res) => {
+  const index = alunos.findIndex(x => x.ra == req.body.ra );
+  alunos[index] = {ra: req.query.ra, nome: req.body.nome, turma: req.body.turma, cursos: req.body.cursos};
+  res.send(JSON.stringify(alunos));
+})
 
 
 
