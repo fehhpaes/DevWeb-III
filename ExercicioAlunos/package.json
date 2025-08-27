@@ -1,7 +1,12 @@
 {
   "name": "exercicioalunos",
   "version": "1.0.0",
-  "description": "Exercicio de fixação",
+  "description": "exercicio de fixação",
+  "keywords": [
+    "api",
+    "node",
+    "express"
+  ],
   "license": "ISC",
   "author": "Felipe",
   "type": "commonjs",
