@@ -43,7 +43,7 @@ app.post('/alunos/:ra/cursos', (req, res) => {
   aluno.cursos.push(cursos);
 
   res.send(JSON.stringify(aluno.cursos));
-})
+});
 
 
 app.put('/alunos/:ra', (req, res) => {
@@ -58,7 +58,23 @@ app.put('/alunos/:ra', (req, res) => {
 
 
   res.send(JSON.stringify(alunos));
-})
+});
+
+
+
+app.put('/alunos/:ra/cursos/:cursoIndex', (req, res) => {
+  const {ra, cursoIndex} = req.params;
+  const {novoCurso} = req.body;
+  const aluno = alunos.find(a => a.ra === ra);
+  
+  const index = Number(cursoIndex);
+  aluno.cursos[index] = novoCurso;
+
+  res.send(JSON.stringify(aluno.cursos));
+  //inserir "novoCurso" ao invés de "curso" quando for fazer a solicitação body no Postman
+  
+});
+
 
 app.delete('/', (req, res) => {
 
