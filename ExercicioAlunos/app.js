@@ -16,6 +16,12 @@ let alunos = [{
   "nome": "Bruno",
   "turma": "ADS",
   cursos: []
+},
+{
+  "ra": "3",
+  "nome": "Janaina",
+  "turma": "DSM",
+  cursos: ["Matematica"]
 }];
 
 
@@ -40,18 +46,22 @@ app.post('/alunos/:ra/cursos', (req, res) => {
 })
 
 
-app.put('/', (req, res) => {
-  // const index = alunos.findIndex(x => x.ra == req.body.ra );
-  // alunos[index] = {ra: req.query.ra, nome: req.body.nome, turma: req.body.turma, cursos: req.body.cursos};
-  // res.send(JSON.stringify(alunos));
+app.put('/alunos/:ra', (req, res) => {
+  const ra = req.params.ra;
+  const {nome, turma} = req.body;
+  
+  const alunoIndex = alunos.findIndex(x => x.ra == req.body.ra );
+  //alunos[alunoIndex] = {ra: req.query.ra, nome: req.body.nome, turma: req.body.turma};
+  
+  alunos[alunoIndex].nome = nome;
+  alunos[alunoIndex].turma = turma;
+
+
+  res.send(JSON.stringify(alunos));
 })
 
 app.delete('/', (req, res) => {
-  // const index = alunos.findIndex(x => x.ra == req.query.ra );
-  // //const indexCurso = cursos.findIndex(y => y.id == req.query.id );
-  // alunos.splice(index, 1);
-  // //cursos.splice(indexCurso, 1)
-  // res.send(JSON.stringify(alunos));
+
 })
 
 
