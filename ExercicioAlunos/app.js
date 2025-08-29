@@ -84,7 +84,12 @@ app.get('/alunos', (req, res) => {
   res.send(JSON.stringify(alunos));
 });
 
+app.get('/alunos/:ra', (req, res) => {
+  const ra = req.params.ra;
+  const aluno = alunos.find(a => a.ra === ra);
 
+  res.send(JSON.stringify(aluno));
+});
 
 
 app.listen(port, () => {
