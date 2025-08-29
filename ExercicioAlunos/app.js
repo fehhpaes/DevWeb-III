@@ -80,6 +80,12 @@ app.delete('/', (req, res) => {
 
 })
 
+app.get('/alunos', (req, res) => {
+  res.send(JSON.stringify(alunos));
+});
+
+
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
