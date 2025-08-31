@@ -76,9 +76,17 @@ app.put('/alunos/:ra/cursos/:cursoIndex', (req, res) => {
 });
 
 
-app.delete('/', (req, res) => {
-
+app.delete('/alunos/:ra', (req, res) => {
+  const {ra} = req.params;
+  const alunoIndex = alunos.findIndex(a => a.ra === ra);
+  const aluno = alunos.splice(alunoIndex, 1);
+  //alunos.splice(alunoIndex, 1);
+  res.send(JSON.stringify(alunos));
 })
+
+
+
+
 
 app.get('/alunos', (req, res) => {
   res.send(JSON.stringify(alunos));
