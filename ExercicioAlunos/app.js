@@ -84,7 +84,17 @@ app.delete('/alunos/:ra', (req, res) => {
   res.send(JSON.stringify(alunos));
 })
 
+app.delete('/alunos/:ra/cursos/:cursoIndex', (req, res) => {
+  const {ra, cursoIndex} = req.params;
+  const aluno = alunos.find(a => a.ra === ra);
+  
+  const index = Number(cursoIndex);
+  aluno.cursos.splice(index, 1);
 
+  res.send(JSON.stringify(aluno.cursos));
+
+
+});
 
 
 
