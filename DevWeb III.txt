@@ -57,12 +57,22 @@ node --watch app.js //para serviar
 
 
 
+OSA
+- Arquitetura orientada à serviços
+- Soap x Rest
 
 
+Status e resposta
+
+Linguaguem WSDL (web service description language) para escrever webservice(xml)
 
 
+Payload = header e body
 
-
+Microsserviços
+	1 - Soa -> Arquitetura orientada à serviços //Soap protocolo da Arquitetura orientada à serviços
+	2 - Microsserviços
+	3 - container - docker - Introdução
 
 
 
