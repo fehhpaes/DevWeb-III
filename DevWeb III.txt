@@ -74,10 +74,30 @@ Microsserviços
 	2 - Microsserviços
 	3 - container - docker - Introdução
 
+MVC com node + express
+	model - estrutura classe, metodo, regras de negocio, logica de negocios
+	view - frontend, apresentação dos dados ao usuario no formato apropriado e com o devido layout
+	controller - controle das requisições (entre view e model), rececbe as requisições do usuario e chama os recursos apropriados (metodos, funções, etc.) para tratá-las.
+	
+	middleware - camada intermediaria para validações, que intercepta as requisições.
+
+controller
+		1)Usuario envia uma requisição ao controlador via URL
+		2)Controlador solicita os dados ao modelo
+		3)modelo retorna os dados solicitados
+		4)controlador uma visão
+		5)visão retornada ao controlador
+		6)Controlador devolve a visão (pagina HTML) que carrega os dados do modelo selecionado
+		
+framework mongooze
 
 
+crie uma nova pasta para o projeto
+inicie o projeto node (npm init)
+Instale a dependencia do express (npm install express --save-dev)
+instale a dependencia do ejs (npm install ejs) //ejs criar view
 
-
+npm install instala o node_module
 
 
 
