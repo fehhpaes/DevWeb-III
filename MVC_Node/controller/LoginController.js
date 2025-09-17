@@ -1,4 +1,18 @@
-exports.getLogin = ((req, res)=>
-    res.send('<h1>Login Funcionando!!!</h1>')
-)
+//Importando a classe
+const loginModel = require('../models/LoginModel')
 
+//instanciando a classe
+const login = new loginModel()
+//acessando o metodo e armazenando o retorno na variavel
+const logged = login.isLogged();
+
+exports.getLogin = ((req, res) => {
+//exibe o texto na tela
+res.send(`<h1>${login.isLogged()}</h1`)
+})
+
+//renderiza o conteúdo da variável logged na view LoginView
+exports.getIsLogged = ((req, res) =>{
+res.render("LoginView", {logged : logged});
+
+});

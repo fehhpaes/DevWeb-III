@@ -99,11 +99,11 @@ instale a dependencia do ejs (npm install ejs) //ejs criar view
 
 npm install instala o node_module
 
-
-middleware == LoginRoute.js
+localhost:3000/login == request
+middleware == LoginRoute.js (Express)
 controller == LoginController.js
 model == Loginmodel.js
-view == loginView.js
+view == loginView.ejs
 
 
 
