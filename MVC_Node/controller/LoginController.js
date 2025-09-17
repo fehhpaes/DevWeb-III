@@ -8,11 +8,11 @@ const logged = login.isLogged();
 
 exports.getLogin = ((req, res) => {
 //exibe o texto na tela
-res.send(`<h1>${login.isLogged()}</h1`)
+res.send(`<h1>${logged}</h1`)
 })
 
 //renderiza o conteúdo da variável logged na view LoginView
 exports.getIsLogged = ((req, res) =>{
-res.render("LoginView", {logged : logged});
+    res.render("LoginView", {logged : logged});
 
 });
