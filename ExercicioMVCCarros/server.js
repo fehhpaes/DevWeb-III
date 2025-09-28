@@ -1,4 +1,4 @@
-// server.js - Versão Limpa e Profissional
+
 const express = require('express');
 const app = express();
 // Importa o arquivo de rotas que criamos na pasta routes

@@ -1,5 +1,5 @@
 // controllers/veiculoController.js
-// Caminho ajustado: agora ele precisa subir um nível (..) para achar a pasta models
+
 const veiculoModel = require('../models/veiculoModel'); 
 
 module.exports = {

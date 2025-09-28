@@ -1,7 +1,7 @@
 // routes/veiculoRoutes.js
 const express = require('express');
 const router = express.Router();
-// Importa o Controller (agora ele está dois níveis acima, na pasta 'controllers')
+// Importa o Controller 
 const veiculoController = require('../controllers/veiculoController'); 
 
 // Rotas para Veículos

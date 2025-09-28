@@ -105,15 +105,10 @@ controller == LoginController.js
 model == Loginmodel.js
 view == loginView.ejs
 
-
-
-
-
-
-
-
-
-
+//Para rodar o projeto 
+node server.js //ou 
+node index.js
+node app.js
 
 
 
