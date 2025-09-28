@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Veículos</title>
+</head>
+<body>
+    <h1>Lista de Veículos Cadastrados</h1>
+
+    <p><a href="/veiculos/novo">Cadastrar Novo Veículo</a></p>
+    
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% veiculos.forEach(veiculo => { %>
+                <tr>
+                    <td><%= veiculo.id %></td>
+                    <td><%= veiculo.nome %></td>
+                    <td>
+                        <a href="/veiculos/editar/<%= veiculo.id %>">Editar</a>
+                        
+                        <form action="/veiculos/excluir/<%= veiculo.id %>" method="POST" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir <%= veiculo.nome %>?');">
+                            <button type="submit">Excluir</button>
+                        </form>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</body>
+</html>

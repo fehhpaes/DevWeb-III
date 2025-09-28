@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= titulo %></title>
+</head>
+<body>
+    <h1><%= titulo %></h1>
+    
+    <p><a href="/veiculos">← Voltar para a Lista</a></p>
+
+    <form action="<%= veiculo ? '/veiculos/editar/' + veiculo.id : '/veiculos' %>" method="POST">
+        
+        <label for="nome">Nome do Veículo:</label><br>
+        <input type="text" id="nome" name="nome" 
+               value="<%= veiculo ? veiculo.nome : '' %>" 
+               required>
+        <br><br>
+        
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>
