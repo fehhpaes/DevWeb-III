@@ -1,0 +1,12 @@
+{
+  "name": "exemplomongomvc",
+  "version": "1.0.0",
+  "description": "Aula de exemplo de MVC com MongoDB",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
