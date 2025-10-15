@@ -110,10 +110,12 @@ node server.js //ou
 node index.js
 node app.js
 
+$ npm i --save express body-parser mongoose
 
 
+Mongoose
 
-
+``
 
 
 
