@@ -117,7 +117,8 @@ Mongoose
 
 ``
 
-
+swagger // instalar o gerador automatico do swagger e da interface 
+npm install swagger-autogen swagger-ui-express 
 
 
 

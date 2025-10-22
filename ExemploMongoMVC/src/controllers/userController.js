@@ -34,7 +34,7 @@ exports.details = async function (req, res) {
   }
 };
 
-exports.delete = async function (req, res) {
+ exports.delete = async function (req, res) {
   try {
     const result = await User.findByIdAndDelete(req.params.id);
     res.status(200).json({ message: "Usuário excluído com sucesso!" });
